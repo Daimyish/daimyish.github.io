@@ -1,6 +1,6 @@
 /* ============================================================
    MATTHEW NG — PORTFOLIO SITE
-   Dark / Teal Game-Dev Aesthetic + Quest-Log Side Nav
+   Dark / Rose Game-Dev Aesthetic + Quest-Log Side Nav
    ============================================================ */
 
 :root {
@@ -9,11 +9,12 @@
   --bg-card: #171A24;
   --bg-card-hover: #1C1F2B;
   --bg-tag: #1A1D2A;
-  --accent: #00D4AA;
-  --accent-dim: #007A63;
-  --accent-glow: rgba(0, 212, 170, 0.10);
-  --accent-glow-strong: rgba(0, 212, 170, 0.25);
-  --accent-glow-bright: rgba(0, 212, 170, 0.5);
+  /* Previous teal accent: #00D4AA, dim: #007A63, glow RGB: 0, 212, 170 */
+  --accent: #bd4656;
+  --accent-dim: #7d2f3a;
+  --accent-glow: rgba(189, 70, 86, 0.10);
+  --accent-glow-strong: rgba(189, 70, 86, 0.25);
+  --accent-glow-bright: rgba(189, 70, 86, 0.5);
   --text: #E8E6E3;
   --text-dim: #9B9DA7;
   --text-muted: #555770;
@@ -148,7 +149,7 @@ body::before {
   transition: background 0.2s, color 0.2s;
 }
 .quest-item a:hover {
-  background: rgba(0, 212, 170, 0.05);
+  background: rgba(189, 70, 86, 0.05);
 }
 
 /* Quest marker (diamond / checkbox style) */

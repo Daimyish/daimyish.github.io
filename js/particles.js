@@ -15,6 +15,7 @@
   const SCATTER_FORCE = 0.08;
   const RETURN_FORCE = 0.02;
   const DAMPING = 0.96;
+  const PARTICLE_RGB = '189, 70, 86';
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();
@@ -60,7 +61,7 @@
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0, 212, 170, ${this.alpha})`;
+      ctx.fillStyle = `rgba(${PARTICLE_RGB}, ${this.alpha})`;
       ctx.fill();
     }
   }
@@ -84,7 +85,7 @@
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 212, 170, ${alpha})`;
+          ctx.strokeStyle = `rgba(${PARTICLE_RGB}, ${alpha})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
