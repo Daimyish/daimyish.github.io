@@ -15,7 +15,7 @@
   const SCATTER_FORCE = 0.08;
   const RETURN_FORCE = 0.02;
   const DAMPING = 0.96;
-  const PARTICLE_RGB = '189, 70, 86';
+  const PARTICLE_RGB = '0, 212, 170';
 
   function resize() {
     const rect = canvas.parentElement.getBoundingClientRect();

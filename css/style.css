@@ -1,6 +1,6 @@
 /* ============================================================
    MATTHEW NG — PORTFOLIO SITE
-   Dark / Rose Game-Dev Aesthetic + Quest-Log Side Nav
+   Dark / Teal Game-Dev Aesthetic + Quest-Log Side Nav
    ============================================================ */
 
 :root {
@@ -9,12 +9,12 @@
   --bg-card: #171A24;
   --bg-card-hover: #1C1F2B;
   --bg-tag: #1A1D2A;
-  /* Previous teal accent: #00D4AA, dim: #007A63, glow RGB: 0, 212, 170 */
-  --accent: #bd4656;
-  --accent-dim: #7d2f3a;
-  --accent-glow: rgba(189, 70, 86, 0.10);
-  --accent-glow-strong: rgba(189, 70, 86, 0.25);
-  --accent-glow-bright: rgba(189, 70, 86, 0.5);
+  /* Previous rose accent: #bd4656, dim: #7d2f3a, glow RGB: 189, 70, 86 */
+  --accent: #00D4AA;
+  --accent-dim: #007A63;
+  --accent-glow: rgba(0, 212, 170, 0.10);
+  --accent-glow-strong: rgba(0, 212, 170, 0.25);
+  --accent-glow-bright: rgba(0, 212, 170, 0.5);
   --text: #E8E6E3;
   --text-dim: #9B9DA7;
   --text-muted: #555770;
@@ -22,6 +22,7 @@
   --tag-border: #2A2E42;
   --quest-width: 220px;
   --xp-height: 3px;
+  --content-max: 900px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -149,7 +150,7 @@ body::before {
   transition: background 0.2s, color 0.2s;
 }
 .quest-item a:hover {
-  background: rgba(189, 70, 86, 0.05);
+  background: rgba(0, 212, 170, 0.05);
 }
 
 /* Quest marker (diamond / checkbox style) */
@@ -239,7 +240,7 @@ body::before {
   position: relative;
   z-index: 1;
   margin-left: var(--quest-width);
-  max-width: 900px;
+  max-width: var(--content-max);
   padding: 40px 48px 60px;
 }
 
@@ -776,6 +777,32 @@ body.shake {
 }
 
 /* === RESPONSIVE === */
+@media (min-width: 1400px) {
+  :root { --content-max: 1080px; }
+  .main {
+    width: min(var(--content-max), calc(100vw - var(--quest-width)));
+    max-width: none;
+    margin-left: calc(var(--quest-width) + max(0px, (100vw - var(--quest-width) - var(--content-max)) / 2));
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root { --content-max: 1220px; }
+  .main {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  .about-grid {
+    gap: 56px;
+  }
+}
+
 @media (max-width: 900px) {
   :root { --quest-width: 0px; }
   .quest-nav {
