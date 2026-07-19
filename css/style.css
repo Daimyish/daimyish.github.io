@@ -547,16 +547,25 @@ body::before {
 
 /* === RESUME EMBED === */
 .resume-frame {
+  display: block;
   width: 100%;
   height: 80vh;
   border: 1px solid var(--rule);
   border-radius: 8px;
   background: #fff;
 }
+.resume-frame p {
+  color: #1a1a1a;
+  padding: 24px;
+}
+.resume-frame a {
+  color: var(--accent-dim);
+}
 .resume-actions {
   display: flex;
   gap: 12px;
   margin-top: 16px;
+  flex-wrap: wrap;
 }
 .resume-actions a {
   font-family: 'JetBrains Mono', monospace;
