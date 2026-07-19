@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempus the Archmage — Matthew Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="case-tempus">
+
+  <div class="xp-bar-track"><div class="xp-bar-fill"></div></div>
+  <div class="xp-label">XP 0 / 500</div>
+  <button class="quest-toggle" aria-label="Toggle navigation">☰</button>
+
+  <nav class="quest-nav">
+    <div class="quest-nav-header">
+      <a href="index.html" class="quest-nav-logo">MATT<span class="accent">.</span>NG</a>
+      <div class="quest-nav-subtitle">Quest Log</div>
+    </div>
+    <div class="quest-section-label">Main Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="home"><a href="index.html"><span class="quest-marker"></span><span class="quest-label">Home Base</span></a></li>
+      <li class="quest-item" data-page="projects"><a href="projects.html"><span class="quest-marker"></span><span class="quest-label">Projects</span></a></li>
+      <li class="quest-item" data-page="about"><a href="about.html"><span class="quest-marker"></span><span class="quest-label">About</span></a></li>
+      <li class="quest-item" data-page="resume"><a href="resume.html"><span class="quest-marker"></span><span class="quest-label">Resume</span></a></li>
+      <li class="quest-item" data-page="contact"><a href="contact.html"><span class="quest-marker"></span><span class="quest-label">Contact</span></a></li>
+    </ul>
+    <div class="quest-section-label">Side Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="case-phoenix"><a href="case-phoenix.html"><span class="quest-marker"></span><span class="quest-label">Phoenix Protocol</span></a></li>
+      <li class="quest-item" data-page="case-steam"><a href="case-steam.html"><span class="quest-marker"></span><span class="quest-label">STEAM Dreams</span></a></li>
+      <li class="quest-item" data-page="case-tempus"><a href="case-tempus.html"><span class="quest-marker"></span><span class="quest-label">Tempus</span></a></li>
+      <li class="quest-item" data-page="case-gadig"><a href="case-gadig.html"><span class="quest-marker"></span><span class="quest-label">GADIG Projects</span></a></li>
+      <li class="quest-item" data-page="case-dnd"><a href="case-dnd.html"><span class="quest-marker"></span><span class="quest-label">D&D Campaigns</span></a></li>
+    </ul>
+    <div class="quest-nav-footer"><div class="quest-stats">0/13 ACHIEVEMENTS</div></div>
+  </nav>
+
+  <div class="main">
+
+    <div class="case-study-hero">
+      <a href="projects.html" class="back-link">← Back to Projects</a>
+      <h1>Tempus the Archmage</h1>
+      <div class="meta">
+        <span>2D Platformer</span>
+        <span>2023</span>
+        <span>Unity, C#</span>
+      </div>
+    </div>
+
+    <div class="case-study-body">
+
+      <h3>The Problem</h3>
+      <p>I wanted to build a 2D platformer that went beyond simple run-and-jump mechanics. The goal was a game where level architecture itself told a story — where room transitions, hidden paths, and enemy placement all communicated narrative without a single line of dialogue text.</p>
+
+      <h3>My Role</h3>
+      <p>Sole Game Designer. I handled level design, enemy AI scripting, difficulty pacing, and environmental storytelling across the full project.</p>
+
+      <h3>Process</h3>
+      <ul>
+        <li>Designed multi-room levels with deliberate difficulty ramps: early rooms teach a mechanic in isolation, mid-rooms combine mechanics, and late rooms test mastery under pressure. Each room was blockout-tested before art pass.</li>
+        <li>Created hidden areas that reward exploration — secret rooms gated behind non-obvious wall jumps or timing puzzles, giving completionists something to find without punishing casual players who miss them.</li>
+        <li>Scripted enemy AI behavior trees in C# — enemies have patrol states, aggro detection radii, attack patterns, and retreat logic, creating encounters that feel reactive rather than scripted.</li>
+        <li>Used environmental storytelling through tileset changes, lighting shifts, and background object placement to imply narrative progression (a crumbling tower, a frozen library, an active forge) without cutscenes.</li>
+      </ul>
+
+      <h3>Outcome</h3>
+      <p>The finished prototype demonstrated that level design and AI scripting could carry narrative weight in a genre that often relies on text boxes. Playtesters consistently identified the intended story beats from environment alone.</p>
+
+      <h3>Reflection</h3>
+      <p>This was my first project where I treated level design as narrative design. The biggest lesson was restraint — early drafts had too many hidden areas, which diluted the reward of finding any one of them. Cutting half the secrets made the remaining ones feel genuinely special.</p>
+
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Matthew Ng. Designed & built from scratch.</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/gamify.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GADIG Projects — Matthew Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="case-gadig">
+
+  <div class="xp-bar-track"><div class="xp-bar-fill"></div></div>
+  <div class="xp-label">XP 0 / 500</div>
+  <button class="quest-toggle" aria-label="Toggle navigation">☰</button>
+
+  <nav class="quest-nav">
+    <div class="quest-nav-header">
+      <a href="index.html" class="quest-nav-logo">MATT<span class="accent">.</span>NG</a>
+      <div class="quest-nav-subtitle">Quest Log</div>
+    </div>
+    <div class="quest-section-label">Main Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="home"><a href="index.html"><span class="quest-marker"></span><span class="quest-label">Home Base</span></a></li>
+      <li class="quest-item" data-page="projects"><a href="projects.html"><span class="quest-marker"></span><span class="quest-label">Projects</span></a></li>
+      <li class="quest-item" data-page="about"><a href="about.html"><span class="quest-marker"></span><span class="quest-label">About</span></a></li>
+      <li class="quest-item" data-page="resume"><a href="resume.html"><span class="quest-marker"></span><span class="quest-label">Resume</span></a></li>
+      <li class="quest-item" data-page="contact"><a href="contact.html"><span class="quest-marker"></span><span class="quest-label">Contact</span></a></li>
+    </ul>
+    <div class="quest-section-label">Side Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="case-phoenix"><a href="case-phoenix.html"><span class="quest-marker"></span><span class="quest-label">Phoenix Protocol</span></a></li>
+      <li class="quest-item" data-page="case-steam"><a href="case-steam.html"><span class="quest-marker"></span><span class="quest-label">STEAM Dreams</span></a></li>
+      <li class="quest-item" data-page="case-tempus"><a href="case-tempus.html"><span class="quest-marker"></span><span class="quest-label">Tempus</span></a></li>
+      <li class="quest-item" data-page="case-gadig"><a href="case-gadig.html"><span class="quest-marker"></span><span class="quest-label">GADIG Projects</span></a></li>
+      <li class="quest-item" data-page="case-dnd"><a href="case-dnd.html"><span class="quest-marker"></span><span class="quest-label">D&D Campaigns</span></a></li>
+    </ul>
+    <div class="quest-nav-footer"><div class="quest-stats">0/13 ACHIEVEMENTS</div></div>
+  </nav>
+
+  <div class="main">
+
+    <div class="case-study-hero">
+      <a href="projects.html" class="back-link">← Back to Projects</a>
+      <h1>Deadshot & King Fisher</h1>
+      <div class="meta">
+        <span>GADIG Team Projects</span>
+        <span>2022–2024</span>
+        <span>QA & Programming</span>
+      </div>
+    </div>
+
+    <div class="case-study-body">
+
+      <h3>The Problem</h3>
+      <p>GADIG (Game and Digital Interactive Group) at George Mason produces collaborative student games each semester. These are large-team projects where reliable QA and debugging become critical — a single uncaught crash can derail a demo build for the entire team.</p>
+
+      <h3>My Role</h3>
+      <p>QA and Programming Support across two projects: Deadshot (a top-down shooter) and King Fisher (a fishing-themed game). I focused on stability testing, edge-case identification, and bug documentation.</p>
+
+      <h3>Process</h3>
+      <ul>
+        <li>Performed crash testing by systematically pushing game systems to their limits — rapid input sequences, boundary collisions, pause/unpause during transitions, and resource exhaustion scenarios.</li>
+        <li>Identified and documented edge-case bugs with detailed reproduction steps: exact inputs, system state, expected behavior, actual behavior, and severity rating. This let developers reproduce issues on first attempt.</li>
+        <li>Submitted structured bug reports through the team's tracking system, categorizing by system (physics, UI, audio, gameplay logic) and priority (blocker, major, minor, cosmetic).</li>
+        <li>Contributed programming fixes for minor issues when bandwidth allowed, working within the existing codebase conventions and submitting through code review.</li>
+      </ul>
+
+      <h3>Outcome</h3>
+      <p>Both projects shipped their semester builds on schedule. The structured QA approach I brought helped the teams catch several blocker-level bugs before demo day that would have caused visible crashes in front of faculty and industry guests.</p>
+
+      <h3>Reflection</h3>
+      <p>Working on someone else's code taught me more about readable architecture than writing my own ever did. When you're debugging a system you didn't build, you viscerally understand why naming conventions, comment headers, and consistent patterns matter. I carry that into every project now.</p>
+
+      <div class="links-row">
+        <a href="https://gadig.itch.io/deadshot" target="_blank" rel="noopener">Deadshot on itch.io →</a>
+        <a href="https://github.com/gmuGADIG/King-Fisher" target="_blank" rel="noopener">King Fisher on GitHub →</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Matthew Ng. Designed & built from scratch.</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/gamify.js"></script>
+</body>
+</html>

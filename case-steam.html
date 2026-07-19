@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEAM Dreams — Matthew Ng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="case-steam">
+
+  <div class="xp-bar-track"><div class="xp-bar-fill"></div></div>
+  <div class="xp-label">XP 0 / 500</div>
+  <button class="quest-toggle" aria-label="Toggle navigation">☰</button>
+
+  <nav class="quest-nav">
+    <div class="quest-nav-header">
+      <a href="index.html" class="quest-nav-logo">MATT<span class="accent">.</span>NG</a>
+      <div class="quest-nav-subtitle">Quest Log</div>
+    </div>
+    <div class="quest-section-label">Main Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="home"><a href="index.html"><span class="quest-marker"></span><span class="quest-label">Home Base</span></a></li>
+      <li class="quest-item" data-page="projects"><a href="projects.html"><span class="quest-marker"></span><span class="quest-label">Projects</span></a></li>
+      <li class="quest-item" data-page="about"><a href="about.html"><span class="quest-marker"></span><span class="quest-label">About</span></a></li>
+      <li class="quest-item" data-page="resume"><a href="resume.html"><span class="quest-marker"></span><span class="quest-label">Resume</span></a></li>
+      <li class="quest-item" data-page="contact"><a href="contact.html"><span class="quest-marker"></span><span class="quest-label">Contact</span></a></li>
+    </ul>
+    <div class="quest-section-label">Side Quests</div>
+    <ul class="quest-list">
+      <li class="quest-item" data-page="case-phoenix"><a href="case-phoenix.html"><span class="quest-marker"></span><span class="quest-label">Phoenix Protocol</span></a></li>
+      <li class="quest-item" data-page="case-steam"><a href="case-steam.html"><span class="quest-marker"></span><span class="quest-label">STEAM Dreams</span></a></li>
+      <li class="quest-item" data-page="case-tempus"><a href="case-tempus.html"><span class="quest-marker"></span><span class="quest-label">Tempus</span></a></li>
+      <li class="quest-item" data-page="case-gadig"><a href="case-gadig.html"><span class="quest-marker"></span><span class="quest-label">GADIG Projects</span></a></li>
+      <li class="quest-item" data-page="case-dnd"><a href="case-dnd.html"><span class="quest-marker"></span><span class="quest-label">D&D Campaigns</span></a></li>
+    </ul>
+    <div class="quest-nav-footer"><div class="quest-stats">0/13 ACHIEVEMENTS</div></div>
+  </nav>
+
+  <div class="main">
+
+    <div class="case-study-hero">
+      <a href="projects.html" class="back-link">← Back to Projects</a>
+      <h1>STEAM Dreams</h1>
+      <div class="meta">
+        <span>3D Adventure/RPG</span>
+        <span>Summer 2024</span>
+        <span>Universal Phoenix Group</span>
+      </div>
+    </div>
+
+    <div class="case-study-body">
+
+      <h3>The Problem</h3>
+      <p>STEAM Dreams is an education-focused 3D adventure/RPG spanning K-12 STEAM categories, shipping to Steam through Universal Phoenix Group and Block By Block Publishing. The game needed engaging mini-game level layouts that could teach science, technology, engineering, art, and math concepts through quests, puzzles, and NPC interactions — without feeling like homework.</p>
+
+      <h3>My Role</h3>
+      <p>Game Design Intern focused on Level Design and QA. I designed and iterated on mini-game level layouts, performed systematic quality assurance passes, and contributed gameplay-flow improvements to the broader quest structure.</p>
+
+      <h3>Process</h3>
+      <ul>
+        <li>Designed level layouts for mini-games within the larger RPG world, iterating on player pathing, difficulty pacing, and visual clarity so educational objectives were embedded in gameplay rather than overlaid on top of it.</li>
+        <li>Performed systematic QA passes across multiple game builds, documenting bugs with detailed reproduction steps, expected vs. actual behavior, and priority ratings to help the team triage effectively.</li>
+        <li>Contributed improvements to gameplay flow — specifically around quest gating, NPC dialogue pacing, and how puzzles signaled their objectives to players of different age groups.</li>
+      </ul>
+
+      <h3>Outcome</h3>
+      <p>STEAM Dreams is listed on Steam and moving toward release. The QA documentation I produced helped the team close over a dozen blocking bugs before the next milestone build, and the level layout iterations improved early-playtest completion rates for the mini-games I worked on.</p>
+
+      <h3>Reflection</h3>
+      <p>Working on an education game forced me to think about accessibility in ways combat-focused games don't — a 7-year-old and a 14-year-old need different signaling for the same puzzle mechanic. The internship also taught me how professional QA workflows operate at scale, which informed how I approach testing in my own projects.</p>
+
+      <div class="links-row">
+        <a href="https://store.steampowered.com/app/3249420/STEAM_Dreams/" target="_blank" rel="noopener">View on Steam →</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Matthew Ng. Designed & built from scratch.</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/gamify.js"></script>
+</body>
+</html>
