@@ -240,16 +240,23 @@
   }
   .edu-details .label { font-weight: 600; }
   .cert-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 6px;
+    gap: 12px;
     margin-top: 1px;
     margin-left: 2px;
   }
+  .cert-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-right: 44px;
+  }
   .cert-row .tag {
-    font-size: 19px;
-    padding: 4px 12px;
+    font-size: 14.25px;
+    padding: 3px 10px;
   }
 
   /* ADDITIONAL */
@@ -548,8 +555,10 @@
       </div>
       <div class="cert-row">
         <span class="skills-label" style="min-width:auto;">Cert</span>
-        <span class="tag">CompTIA Tech+</span>
-        <span class="tag">CompTIA A+</span>
+        <div class="cert-tags">
+          <span class="tag">CompTIA Tech+</span>
+          <span class="tag">CompTIA A+</span>
+        </div>
       </div>
     </div>
   </div>
